@@ -1,0 +1,25 @@
+# Render Blueprint — one web service: Express API + the built React app on the same URL.
+# Secrets (sync: false) are entered in the Render dashboard when the Blueprint is created.
+services:
+  - type: web
+    name: trustlab-smartreport
+    runtime: node
+    plan: free
+    buildCommand: cd backend && npm ci && cd ../frontend && npm ci && npm run build
+    startCommand: cd backend && npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: "20"
+      - key: NODE_ENV
+        value: production
+      - key: MONGO_URI
+        sync: false
+      - key: LIMS_BASE_URL
+        value: https://mytrustlab.in/Trustlab
+      - key: LIMS_HISTORY_KEY
+        sync: false
+      - key: PORTAL_USER
+        sync: false
+      - key: PORTAL_PASSWORD
+        sync: false

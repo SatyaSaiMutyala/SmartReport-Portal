@@ -80,3 +80,13 @@ npm run dev             # http://localhost:5173 (proxies /api -> :5000; API_PROX
 ```
 
 Open `http://localhost:5173/?visit=<visit no.>` or type the visit number. **Print / PDF** prints an A4 report.
+
+## Deploy (Render, test)
+
+`render.yaml` defines one web service: the Express API also serves the built frontend, so there is one URL.
+Setting `PORTAL_USER` / `PORTAL_PASSWORD` puts the whole portal behind one shared sign-in (the browser's
+login box); `/api/health` stays open for Render's health check.
+
+1. Render → **New → Blueprint** → pick this repo.
+2. Enter the secret env vars: `MONGO_URI`, `LIMS_HISTORY_KEY`, `PORTAL_USER`, `PORTAL_PASSWORD`.
+3. MongoDB Atlas → **Network Access** → allow Render (`0.0.0.0/0` for testing).
