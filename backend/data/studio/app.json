@@ -1,0 +1,130 @@
+{
+  "engineVersion": "1.0",
+  "sourceFile": "TrustLab_SmartReport_Studio_4.html",
+  "terms": [
+    [
+      "Scope of the report",
+      "This report presents the results of in-vitro laboratory examination of the specimen(s) received and identified on the cover page. It relates only to the sample tested, as received, at the time of collection stated. It is <b>not a diagnosis</b> and is not a substitute for clinical examination."
+    ],
+    [
+      "Interpretation",
+      "Results must be interpreted by a registered medical practitioner in the context of your clinical history, examination findings and other investigations. The \"Significance\", \"Current test result\" and \"Integrated Read\" sections are educational explanations generated from TrustLab's clinically reviewed interpretation database; they describe what a result generally means, not what it means in your particular case."
+    ],
+    [
+      "Reference ranges",
+      "Reference intervals are specific to the method, reagent and instrument in use at the processing laboratory named on the cover, and are age- and sex-adjusted where applicable. Results from other laboratories, or from this laboratory after a method change, may not be directly comparable. Where a value has no universally agreed cut-off, the guideline basis is printed alongside it."
+    ],
+    [
+      "Biological and analytical variation",
+      "Values vary between samples for physiological reasons — time of day, fasting state, hydration, exercise, medication and intercurrent illness. A single result outside the reference interval does not by itself indicate disease, and a result within it does not exclude disease. Unexpected or clinically discordant results should be repeated on a fresh sample."
+    ],
+    [
+      "Sample quality",
+      "Haemolysis, lipaemia and icterus are graded on the cover. Where present they can affect specific analytes; results so affected are reported with a comment or withheld. The laboratory is not responsible for errors arising from incorrect patient identification or clinical information, or from improper collection where the sample was not collected by TrustLab personnel."
+    ],
+    [
+      "Tests referred out",
+      "Certain specialised investigations may be referred to an empanelled partner laboratory. Such results are reported with the performing laboratory identified, and the reference intervals and methodology are those of that laboratory."
+    ],
+    [
+      "Screening and add-on tests",
+      "Tumour markers, serological screens and genetic tests are screening investigations. A raised or reactive result requires confirmation by an appropriate confirmatory test or imaging before any conclusion is drawn; a normal result does not exclude disease. Add-on modules are optional, separately priced and labelled as such against each result."
+    ],
+    [
+      "Retention of samples and records",
+      "Specimens are retained under controlled conditions for the period specified in the laboratory's quality system, then disposed of as biomedical waste per statutory requirements. Reports and records are retained as required under NABL and ISO 15189:2022."
+    ],
+    [
+      "Confidentiality and data protection",
+      "Results are released only to you, to the referring clinician, or to a person authorised by you in writing, except where disclosure is required by law or by statutory notification. Personal data is processed under applicable Indian data protection law. Anonymised data may be used for internal quality control, method validation and statistical purposes."
+    ],
+    [
+      "Digital access and verification of authenticity",
+      "The QR code on the cover opens this report in the TrustLab Lab Information Systems portal and is both an access link and a security feature. A genuine TrustLab report always resolves to the domain printed beside it. Any discrepancy — a different domain or sub-domain, a shortened or redirecting link, a mismatched report number, or differing values — indicates that the copy in hand is <b>not an authentic TrustLab report</b> and must not be relied upon; report it to customer care immediately. The portal record is authoritative and prevails over any printed copy. Portal access is controlled by the mobile number registered against this report."
+    ],
+    [
+      "Queries, re-testing and complaints",
+      "Queries on a result should be raised within <b>7 days</b> of the report date. Where a result is disputed the laboratory will re-examine the retained sample at no charge if it remains suitable; a fresh sample may be requested. Complaints may be addressed to the Quality Manager at the address below and are handled under the laboratory's documented complaints procedure."
+    ],
+    [
+      "Limitation of liability",
+      "The laboratory's liability in respect of any test is limited to the amount charged for that test. TrustLab accepts no liability for clinical decisions taken on the basis of this report without medical consultation."
+    ]
+  ],
+  "settings": {
+    "version": "1.0",
+    "topPatterns": 7,
+    "lab": {
+      "name": "TrustLab Diagnostics Pvt Ltd",
+      "legal": "TrustLab Diagnostics Private Limited",
+      "city": "Hyderabad",
+      "nabl": "NABL MC-4299",
+      "cin": "U85100TG2020PTC143059",
+      "address": "#31, Street No. 5, Prakash Nagar, Begumpet, Hyderabad – 500016",
+      "phone": "040 2776 5656",
+      "email": "care@mytrustlab.com",
+      "web": "www.mytrustlab.com",
+      "centre": "TL-HYD-01 · Begumpet",
+      "processing": "TL-HYD Central Lab (NRL)"
+    },
+    "sign": [
+      {
+        "name": "",
+        "role": "Consultant Pathologist · TrustLab HYD Central Lab",
+        "reg": "TSMC Reg. No."
+      },
+      {
+        "name": "",
+        "role": "Head — Clinical Biochemistry",
+        "reg": "TSMC Reg. No."
+      }
+    ],
+    "lis": {
+      "adapter": "trustlab",
+      "url": "",
+      "authHeader": "Authorization",
+      "authPrefix": "Bearer ",
+      "pollSec": 120,
+      "autoPoll": false,
+      "portal": "https://reports.mytrustlab.com/r",
+      "portalDomain": "reports.mytrustlab.com",
+      "lastSync": "",
+      "fetchUrl": "{base}/api/SmartReport/GetReport?ReportNo={reportNo}",
+      "listUrl": "{base}/api/SmartReport/GetFinalisedReports?FromDate={since}&CentreCode={centre}",
+      "method": "GET",
+      "body": "",
+      "centre": "",
+      "loginUrl": "",
+      "loginBody": "{\"UserName\":\"{user}\",\"Password\":\"{password}\"}",
+      "loginTokenPath": "Token",
+      "user": "",
+      "map": {
+        "list": "Data",
+        "reportNo": "ReportNo",
+        "pid": "PatientID",
+        "name": "PatientName",
+        "salutation": "Title",
+        "age": "Age",
+        "sex": "Gender",
+        "mobile": "Mobile",
+        "pkg": "PackageName",
+        "collection": "CollectionDateTime",
+        "reportDate": "ReportDateTime",
+        "centre": "CentreName",
+        "referredBy": "ReferredBy",
+        "results": "Results",
+        "rCode": "TestCode",
+        "rName": "TestName",
+        "rValue": "Result",
+        "rUnit": "Unit",
+        "rDate": "ResultDateTime",
+        "rFlag": "Flag",
+        "history": "PreviousResults",
+        "hDate": "ResultDateTime",
+        "hValue": "Result"
+      },
+      "codeMap": "",
+      "pkgMap": ""
+    }
+  }
+}

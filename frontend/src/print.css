@@ -1,0 +1,24 @@
+/* Print / Save as PDF: drop the app chrome, keep each card whole, keep colours */
+@media print {
+  @page {
+    size: A4;
+    margin: 12mm;
+  }
+  html,
+  body {
+    background: #fff !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .avoid-break {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  .page-break-before {
+    break-before: page;
+    page-break-before: always;
+  }
+}

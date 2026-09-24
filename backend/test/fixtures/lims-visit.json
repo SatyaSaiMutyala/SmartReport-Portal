@@ -1,0 +1,98 @@
+{
+  "status": true,
+  "response": {
+    "visit": {
+      "visit_id": "DEMO-0001",
+      "uhid": "UHID-DEMO-1",
+      "patient_name": "Demo Patient",
+      "age": "52 Y",
+      "gender": "Male",
+      "mobile": "9900000208",
+      "doctor": "SELF",
+      "centre": "TL-HYD-01 Begumpet",
+      "centre_code": "TLHYD01",
+      "entry_date": "31-Aug-2026 07:35 AM"
+    },
+    "tests": [
+      {
+        "test_id": "900001", "name": "COMPLETE BLOOD COUNT (CBC)", "department": "HAEMATOLOGY", "status": "approved",
+        "approved": true, "result_flag": true, "approved_date": "02-Sep-2026 10:20 AM",
+        "results": [
+          { "observation_id": 101, "parameter_name": "HAEMOGLOBIN", "result_value": "14.6", "range_min": "13", "range_max": "17", "flag": "", "unit": "g/dL", "is_comment": 0 },
+          { "observation_id": 102, "parameter_name": "Total Leucocyte Count (TLC)", "result_value": "7400", "range_min": "4000", "range_max": "10000", "flag": "", "unit": "cells/µL", "is_comment": 0 },
+          { "observation_id": 103, "parameter_name": "RBC COUNT", "result_value": "4.95", "range_min": "4.5", "range_max": "5.5", "flag": "", "unit": "million/µL", "is_comment": 0 },
+          { "observation_id": 104, "parameter_name": "PCV", "result_value": "44.5", "range_min": "40", "range_max": "50", "flag": "", "unit": "%", "is_comment": 0 },
+          { "observation_id": 105, "parameter_name": "MCV", "result_value": "88", "range_min": "80", "range_max": "100", "flag": "", "unit": "fL", "is_comment": 0 },
+          { "observation_id": 106, "parameter_name": "PLATELET COUNT", "result_value": "236000", "range_min": "150000", "range_max": "410000", "flag": "", "unit": "cells/µL", "is_comment": 0 },
+          { "observation_id": 107, "parameter_name": "Remarks", "result_value": "Kindly correlate clinically", "range_min": "", "range_max": "", "flag": "", "unit": "", "is_comment": 1 }
+        ]
+      },
+      {
+        "test_id": "900002", "name": "HbA1c", "department": "BIOCHEMISTRY", "status": "approved",
+        "approved": true, "result_flag": true, "approved_date": "02-Sep-2026 10:20 AM",
+        "results": [
+          { "observation_id": 201, "parameter_name": "HbA1c (Glycosylated Haemoglobin)", "result_value": "6.1", "range_min": "4", "range_max": "5.6", "flag": "H", "unit": "%", "is_comment": 0 },
+          { "observation_id": 202, "parameter_name": "Estimated Average Glucose (eAG)", "result_value": "128", "range_min": "", "range_max": "", "flag": "", "unit": "mg/dL", "is_comment": 0 }
+        ]
+      },
+      {
+        "test_id": "900003", "name": "GLUCOSE FASTING", "department": "BIOCHEMISTRY", "status": "approved",
+        "approved": true, "result_flag": true, "approved_date": "02-Sep-2026 10:20 AM",
+        "results": [
+          { "observation_id": 301, "parameter_name": "Fasting Blood Sugar", "result_value": "112", "range_min": "70", "range_max": "100", "flag": "H", "unit": "mg/dL", "is_comment": 0 }
+        ]
+      },
+      {
+        "test_id": "900004", "name": "LIPID PROFILE", "department": "BIOCHEMISTRY", "status": "approved",
+        "approved": true, "result_flag": true, "approved_date": "02-Sep-2026 10:20 AM",
+        "results": [
+          { "observation_id": 401, "parameter_name": "TOTAL CHOLESTEROL", "result_value": "226", "range_min": "", "range_max": "200", "flag": "H", "unit": "mg/dL", "is_comment": 0 },
+          { "observation_id": 402, "parameter_name": "TRIGLYCERIDES", "result_value": "212", "range_min": "", "range_max": "150", "flag": "H", "unit": "mg/dL", "is_comment": 0 },
+          { "observation_id": 403, "parameter_name": "HDL CHOLESTEROL", "result_value": "36", "range_min": "40", "range_max": "", "flag": "L", "unit": "mg/dL", "is_comment": 0 },
+          { "observation_id": 404, "parameter_name": "LDL CHOLESTEROL", "result_value": "148", "range_min": "", "range_max": "100", "flag": "H", "unit": "mg/dL", "is_comment": 0 },
+          { "observation_id": 405, "parameter_name": "VLDL CHOLESTEROL", "result_value": "42", "range_min": "", "range_max": "30", "flag": "H", "unit": "mg/dL", "is_comment": 0 }
+        ]
+      },
+      {
+        "test_id": "900005", "name": "LIVER FUNCTION TEST (LFT)", "department": "BIOCHEMISTRY", "status": "approved",
+        "approved": true, "result_flag": true, "approved_date": "02-Sep-2026 10:20 AM",
+        "results": [
+          { "observation_id": 501, "parameter_name": "SGOT (AST)", "result_value": "44", "range_min": "", "range_max": "40", "flag": "H", "unit": "U/L", "is_comment": 0 },
+          { "observation_id": 502, "parameter_name": "SGPT (ALT)", "result_value": "58", "range_min": "", "range_max": "41", "flag": "H", "unit": "U/L", "is_comment": 0 },
+          { "observation_id": 503, "parameter_name": "Serum Albumin", "result_value": "4.4", "range_min": "3.5", "range_max": "5.2", "flag": "", "unit": "g/dL", "is_comment": 0 }
+        ]
+      },
+      {
+        "test_id": "900006", "name": "KIDNEY FUNCTION TEST", "department": "BIOCHEMISTRY", "status": "approved",
+        "approved": true, "result_flag": true, "approved_date": "02-Sep-2026 10:20 AM",
+        "results": [
+          { "observation_id": 601, "parameter_name": "Serum Creatinine", "result_value": "1.1", "range_min": "0.7", "range_max": "1.3", "flag": "", "unit": "mg/dL", "is_comment": 0 },
+          { "observation_id": 602, "parameter_name": "Serum Uric Acid", "result_value": "7.6", "range_min": "3.5", "range_max": "7.2", "flag": "H", "unit": "mg/dL", "is_comment": 0 }
+        ]
+      },
+      {
+        "test_id": "900007", "name": "THYROID PROFILE-I", "department": "IMMUNOASSAY", "status": "approved",
+        "approved": true, "result_flag": true, "approved_date": "02-Sep-2026 10:20 AM",
+        "results": [
+          { "observation_id": 701, "parameter_name": "TSH", "result_value": "6.8", "range_min": "0.35", "range_max": "5.5", "flag": "H", "unit": "µIU/mL", "is_comment": 0 },
+          { "observation_id": 702, "parameter_name": "Vitamin D (25-OH)", "result_value": "18", "range_min": "30", "range_max": "100", "flag": "L", "unit": "ng/mL", "is_comment": 0 },
+          { "observation_id": 703, "parameter_name": "Vitamin B12", "result_value": "190", "range_min": "211", "range_max": "911", "flag": "L", "unit": "pg/mL", "is_comment": 0 }
+        ]
+      },
+      {
+        "test_id": "900008", "name": "URINE ROUTINE EXAMINATION", "department": "CLINICAL PATHOLOGY", "status": "approved",
+        "approved": true, "result_flag": true, "approved_date": "02-Sep-2026 10:20 AM",
+        "results": [
+          { "observation_id": 801, "parameter_name": "Colour", "result_value": "Pale yellow", "range_min": "", "range_max": "", "flag": "", "unit": "", "is_comment": 0 },
+          { "observation_id": 802, "parameter_name": "Pus Cells", "result_value": "2-3", "range_min": "", "range_max": "", "flag": "", "unit": "/hpf", "is_comment": 0 },
+          { "observation_id": 803, "parameter_name": "RBC", "result_value": "Nil", "range_min": "", "range_max": "", "flag": "", "unit": "/hpf", "is_comment": 0 },
+          { "observation_id": 804, "parameter_name": "Glucose", "result_value": "Negative", "range_min": "", "range_max": "", "flag": "", "unit": "", "is_comment": 0 }
+        ]
+      },
+      {
+        "test_id": "900009", "name": "CULTURE & SENSITIVITY (URINE)", "department": "MICROBIOLOGY", "status": "tested",
+        "approved": false, "result_flag": true, "approved_date": "", "results": []
+      }
+    ]
+  }
+}
