@@ -5,7 +5,8 @@ services:
     name: trustlab-smartreport
     runtime: node
     plan: free
-    buildCommand: cd backend && npm ci && cd ../frontend && npm ci && npm run build
+    # --include=dev: NODE_ENV=production makes npm skip devDependencies, and vite is one
+    buildCommand: cd backend && npm ci && cd ../frontend && npm ci --include=dev && npm run build
     startCommand: cd backend && npm start
     healthCheckPath: /api/health
     envVars:
